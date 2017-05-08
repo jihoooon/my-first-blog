@@ -1,222 +1,122 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>NOVELER</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+ <html>
+<head>
 
-		<style>
-		#forum{
-		background-color: #2a2f4a;
-		text-align: center;
-		align-items: center;
+  <meta charset="utf-8">
+  <style>
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+    header{
+      border-bottom:1px solid gray;
+      padding-left:20px;
+    }
+    footer{
+      border-top:1px solid gray;
+      padding:20px;
+      text-align:center;
+    }
+    .content{
+      display:flex;
+    }
+    .content nav{
+      border-right:1px solid gray;
+    }
+    nav, aside{
+      flex-basis:150px;
+      flex-shrink:0;
+    }
+    main{
+      padding:10px;
+    }
+    body{
+      font-family: 'KoreanYNMYT-L' !important;
+      background-color: rgb(0,0,50);
+      color: rgb(255,255,255);
+    }
+    ul.listofsearch {
+      list-style: none;
+      margin-bottom: 5px;
+      paddding: 5px 0px 5px 5px;
+      font-size 11px;
+      text-decoration:none;
+    }
+    ul.listofsearch li.listoflist {
+      border-bottom: 1px solid #efefef;
+      font-size 12px;
+    }
 
-		}
-		</style>
-	</head>
-	<body>
-<!-- 네비게이션 바 -->
-		
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>NOVELER</strong> <span>by PSYCODER</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    ul.listofsearch li {
+      list-style: none
+      text-decoration:none;
+    }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="history/history.html">History</a></li>
-							<li><a href="department.html">Department</a></li>
-							<li><a href="gallery/gallery index.html">Gallery</a></li>
-							<li><a href="elements.html">Contact</a></li>
-							<li><a href="forum.html">Forum</a></li>
-							<li><a href="development.html">Development</a></li>
-						</ul>
-						<ul class="actions vertical">
-							<li><a href="signup.html" class="button fit">Sign Up</a></li>
-							<li><a href="login.html" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+    ul a {text-decoration: none; color: white;}
+    ul a:hover {color: skyblue;}
 
+    @font-face {
+      font-family: 'KoreanYNMYT-L';
+      src: url('KoreanYNMYT-L.eot?#iefix') format('embedded-opentype'),  url('KoreanYNMYT-L.woff') format('woff'), url('KoreanYNMYT-L.ttf')  format('truetype'), url('KoreanYNMYT-L.svg#KoreanYNMYT-L') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
 
+  </style>
+</head>
 
-			<div id="wrapper">
-
-				<!-- Header -->
-					
-
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Noveler</h1>
-							</header>
-							<div class="content">
-								<p>Creative<br />
-								Novel</p>
-								<ul class="actions">
-									<li><a href="#two" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
-					<section id="forum">
-								<div class="inner">
-									<header class="forum">
-										<center><h1>Today's Topic</h1></center>
-									</header>
+<body>
 
 
-									<div class="box">
-									<p>
-										포럼페이지에서 자동으로 내용 가져오는 형식으로 ...
-									</p>
-									</div>
+<div class="container">
+  <header>
+    <h1>HOME</h1>
+    <img src "로고.png" height="" alt="로고" title="로고">
+  </header>
+  <section class="content">
+    <nav>
+      <ul class="listofsearch">
+        <li class="listoflist"><a href="">전체검색</a></li>
+          <ul>
+            <li><a href="">소주</a></li>
+            <li><a href="">맥주</a></li>
+            <li><a href="">칵테일</a></li>
+          </ul>
+        <li class="listoflist"><a href="2.html">조건별검색</a></li>
+        <li class="listoflist"><a href="3.html">위치별검색</a></li>
+          <ul>
+            <li><a href="">혜화</a></li>
+            <li><a href="">강남</a></li>
+            <li><a href="">신촌</a></li>
+          </ul>
+      </ul>
+    </nav>
+    <main>
+      <h1>조건별검색</h1>
+      <p>
+      <h3>WHO</h3>
+        혼자서 : <input type="checkbox" name="who" value="alone">
+        연인과 함께 : <input type="checkbox" name="who" value="couple">
+        많은사람들과함께 : <input type="checkbox" name="who" value="group">
+      </p>
+      <p>
+      <h3>WHAT</h3>
+      소주를 : <input type="checkbox" name="what" value="soju">
+      맥주를 : <input type="checkbox" name="what" value="beer">
+      칵테일을 : <input type="checkbox" name="what" value="cocktail">
+      </p>
+      <p>
+      <h3>WHY</h3>
+      정문에서 : <input type="checkbox" name="where" value="main_door">
+      대명거리에서 : <input type="checkbox" name="where" value="main_street">
+      </p>
+      <input type="submit" value="마시고 싶다">
+      </main>
+  </section>
+  <footer>
+    <img src "footer 로고.png">
+    <a href=""></a>
+  </footer>
+</div>
 
-
-									<div class="field">
-										<label for="message">Comments</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-
-
-
-									<p>     </p>
-									<p>     </p>
-									<p>     </p>
-									
-									<div>
-									<form><input type="submit" value="Submit" class="button "/></form>
-									</div>
-
-
-									<div>
-								
-										<center><ul><a href="forum.html" class="button special small">More</a></ul>
-								
-									
-								</div>
-					</section>
-
-				<!-- Main -->
-					<div id="main">
-
-
-
-
-		
-						<!-- One -->
-							<section id="two" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/icon/history.jp" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="history/history.html" class="link">History</a></h3>
-										<p>History of Noveler</p>
-										<p>We are now moving</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/icon/department.jp" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="department.html" class="link">Department</a></h3>
-										<p>Department of Noveler</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/icon/gallery.jp" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="gallery/gallery index.html" class="link">Gallery</a></h3>
-										<p>Our photo is here</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/icon/contact.jp" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Contact</a></h3>
-										<p>Contact of Noveler</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="development.html" class="link">Development</a></h3>
-										<p>Development</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="forum.html" class="link">Forum</a></h3>
-										<p>forum</p>
-									</header>
-								</article>
-							</section>
-
-					
-					</div>
-
-					<div class="inner">
-					<p>    </p>
-					<p>    </p>
-					<p>    </p>
-					<p>    </p>
-						<center><ul><a href="https://docs.google.com/forms/d/e/1FAIpQLSdMZ3yJli5mECwAeJcxEl6l_mjKDVHZ5U9xl0sAFo2jvSdLjQ/viewform?c=0&w=1" class="button"> 노벨러 지원하기</a></ul></center>
-					</div>
-
-
-
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li>
-								<li>Design: <a href="index.html">NOVELER</a></li>
-								
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+</body>
+</html> 
